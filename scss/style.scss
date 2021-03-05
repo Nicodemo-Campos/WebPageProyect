@@ -32,30 +32,26 @@
 
 header {
    grid-area: header;
-}
 
 nav {
 	background-color: #000;
 }
-
 .li {
 	padding: 1rem;
 	margin: 0 1rem 0 1rem;
 	line-height: 0; 
 }
-
 .li:hover {
 	background-color: lightblue;
 	color: white;
 	padding: 1rem; 
 }
-
 a:link, a:visited, a:active {
 	text-decoration: none; 
 }
-
 li {
 	background-color: #000; 
+}
 }
 
 /* Seccion Titulos 👍 */
@@ -160,18 +156,21 @@ section#filtros {
 	grid-template-columns: repeat(1, auto);
 	grid-auto-rows: 50px;
 	align-items: center;
-	text-align: center; }
+	text-align: center; 
+}
 
 .section__selec {
 	display: flex;
 	justify-content: center;
-	margin: 20px 20px 20px 20px; }
+	margin: 20px 20px 20px 20px; 
+}
 
 .section__selec-div {
 	float: left;
 	margin: 10px 10px 10px 10px;
 	text-align: left;
-	align-items: center; }
+	align-items: center; 
+}
 
 /* Seccion Grid Videos 👍 */
 

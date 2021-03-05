@@ -8,7 +8,14 @@
 /* Grid Css 👍 */
 #grilla {
   display: grid;
-  grid-template-areas: "header" "titulos" "formularios" "filtros" "videos" "iframe" "comentarios" "footer";
+  grid-template-areas: "header"
+ "titulos"
+ "formularios"
+ "filtros"
+ "videos"
+ "iframe"
+ "comentarios"
+ "footer";
   grid-template-rows: auto auto auto auto auto auto auto auto;
   grid-template-columns: auto; }
 
@@ -19,25 +26,20 @@
 /* Header y Navegacion 👍 */
 header {
   grid-area: header; }
-
-nav {
-  background-color: #000; }
-
-.li {
-  padding: 1rem;
-  margin: 0 1rem 0 1rem;
-  line-height: 0; }
-
-.li:hover {
-  background-color: lightblue;
-  color: white;
-  padding: 1rem; }
-
-a:link, a:visited, a:active {
-  text-decoration: none; }
-
-li {
-  background-color: #000; }
+  header nav {
+    background-color: #000; }
+  header .li {
+    padding: 1rem;
+    margin: 0 1rem 0 1rem;
+    line-height: 0; }
+  header .li:hover {
+    background-color: lightblue;
+    color: white;
+    padding: 1rem; }
+  header a:link, header a:visited, header a:active {
+    text-decoration: none; }
+  header li {
+    background-color: #000; }
 
 /* Seccion Titulos 👍 */
 section#titulos {
