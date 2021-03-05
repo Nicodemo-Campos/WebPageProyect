@@ -67,23 +67,25 @@ section#formularios {
   display: flex;
   justify-content: center;
   margin: 20px 20px 20px 20px;
-  text-align: center; }
+  text-align: left; }
 
 .boton {
   margin: 20px 65px 0 65px; }
 
-/*
+
 .input__form {
-	margin: 10px 0 0 10px;
+	display: flex;
+	margin: 0 20px 0 0;
 }
 
 .div__form {
-	margin: 10px 0 0 30px;
+	display: flex;
+	margin: 0 0 0 20px;
 }
 
 .boton__cc {
-	margin: 0 20px 0 20px;
-}*/
+	margin: 0 20px;
+}
 /* Login */
 .titulos__forms-login {
   font-size: 1rem;
@@ -468,6 +470,9 @@ p {
   .iframe__section {
     width: 900px;
     height: 600px; }
+  	.boton__cc {
+	margin: 0 50px;
+}
   /* Footer 👍 */
   .footer {
     font-size: 1.2rem; } }
