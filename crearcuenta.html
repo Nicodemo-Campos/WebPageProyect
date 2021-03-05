@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>MonosChinos</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="apple-touch-icon" sizes="180x180" href="icono/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="icono/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="icono/favicon-16x16.png">
+	<link rel="manifest" href="icono/site.webmanifest">
+	<link rel="mask-icon" href="icono/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="icono/favicon.ico">
+	<meta name="msapplication-TileColor" content="#000000">
+	<meta name="msapplication-config" content="icono/browserconfig.xml">
+	<meta name="theme-color" content="#000000">	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> <!-- CDN de Bootstrap del CSS -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> <!-- CDN de Bootstrap del JS -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script><!-- CDN de la librería de Jquery  -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div id="grilla">
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-dark">
+				<a style="margin: auto;" href="index.html"><img class="icono" alt="Inicio" title="Inicio" src="images/icono.png"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div style="padding: 5px; background-color: #000;" class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="li nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="li nav-link" href="pages/animes.html">Animes</a>
+						</li>
+						<li class="nav-item">
+							<a class="li nav-link" href="pages/hentai.html">Hentai</a>
+						</li>
+						<li class="nav-item">
+							<a class="li nav-link" href="pages/doramas.html">Doramas</a>
+						</li>
+						<li class="nav-item">
+							<a class="li nav-link" href="login.html">Iniciar Sesion</a>
+						</li>
+						<li class="nav-item">
+							<a class="li nav-link" href="crearcuenta.html">Registrarse</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<section id="titulos">
+			<!-- Titulos  -->
+			<h1 class="titulos__forms">Cree Una Cuenta!</h1>
+		</section>
+		<section id="formularios" class="section__form">
+			<form class="form-group">
+				<div class="form-row">
+					<div class="col">
+						<label>Nombre:</label>
+						<input type="text" class="form-control" placeholder="Nombre">
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="col">
+						<label>Apellido:</label>
+						<input type="text" class="form-control" placeholder="Apellido">
+					</div>
+				</div>
+				<div>Pais</div>
+				<select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+					<option selected>Elije..</option>
+					<option value="Argentina">Argentina</option>
+					<option value="Uruguay">Uruguay</option>
+					<option value="Paraguay">Paraguay</option>
+				</select>
+				<div class="form-group">
+					<label for="exampleInputEmail1">Correo:</label>
+					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+					placeholder="Enter email">
+				</div>
+				<div class="form-group">
+					<label for="exampleInputPassword1">Contraseña:</label>
+					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				</div>
+				<input class="input__form form-check-input" type="checkbox" value="" id="defaultCheck1" type="radio" name="sexo" value="mujer">
+				<div class="div__form">Mujer</div>
+				<input class="input__form form-check-input" type="checkbox" value="" id="defaultCheck1" type="radio" name="sexo" value="hombre">
+				<div class="div__form">Hombre</div>
+				<input class="input__form form-check-input" type="checkbox" value="" id="defaultCheck1" type="checkbox" name="aceptar" value="1">
+				<div class="div__form">Acepta recibir correos sobre nuestros productos?</div>
+				<input class="boton__cc btn btn-primary" type="submit" name="CrearCuenta">
+				<input class="boton__cc btn btn-primary" type="reset" name="Resetear">
+			</form>
+		</section>
+		<footer class="cc__footer">
+			<p>
+				MonitosChinos © 2020 Todos los derechos reservados.<br>
+				Ningun video se encuentra alojado en nuestros servidores.<br>
+				No somos fansub, todos los vídeos enlazados son tomados de internet, de sitios webs gratuitos.
+			</p>
+			<p>
+				<a href="">Contactanos</a>
+			</p>
+		</footer>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

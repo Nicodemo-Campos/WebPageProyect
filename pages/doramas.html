@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>MonosChinos</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="apple-touch-icon" sizes="180x180" href="../icono/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../icono/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../icono/favicon-16x16.png">
+	<link rel="manifest" href="../icono/site.webmanifest">
+	<link rel="mask-icon" href="../icono/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="../icono/favicon.ico">
+	<meta name="msapplication-TileColor" content="#000000">
+	<meta name="msapplication-config" content="icono/browserconfig.xml">
+	<meta name="theme-color" content="#000000">	
+	<link rel="stylesheet" href="../https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> <!-- CDN de Bootstrap del CSS -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> <!-- CDN de Bootstrap del JS -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script><!-- CDN de la librería de Jquery  -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+	<div id="grilla">
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-dark">
+				<a style="margin: auto;" href="../index.html"><img class="icono" alt="Inicio" title="Inicio" src="../images/icono.png"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div style="padding: 5px; background-color: #000;" class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="li nav-link" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="li nav-link" href="animes.html">Animes</a>
+						</li>
+						<li class="nav-item">
+							<a class="li nav-link" href="hentai.html">Hentai</a>
+						</li>
+						<li class="nav-item">
+							<a class="li nav-link" href="doramas.html">Doramas</a>
+						</li>
+						<li class="nav-item">
+							<a class="li nav-link" href="../login.html">Iniciar Sesion</a>
+						</li>
+						<li class="nav-item">
+							<a class="li nav-link" href="../crearcuenta.html">Registrarse</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<section id="titulos">
+			<h1 class="titulos">Todos los Doramas</h1>
+		</section>
+		<section id="filtros" class="grid2 section__selec">
+			<div class="section__selec-div">
+				<div>Categoria:</div>
+				<select name="Categoria">
+					<option value="Todos">Todos</option>
+					<option value="Anime">Anime</option>
+					<option value="Ova">Ova</option>
+					<option value="Pelicula">Pelicula</option>
+					<option value="Especial">Especial</option>
+					<option value="Corto">Corto</option>
+					<option value="Ona">Ona</option>
+					<option value="Danghua">Danghua</option>
+				</select>
+			</div>
+			<div class="section__selec-div">
+				<div>Género:</div>
+				<select name="Género">
+					<option value="Todo">Todo</option>
+					<option value="Acción">Acción</option>
+					<option value="Aventura">Aventura</option>
+					<option value="Carreras">Carreras</option>
+					<option value="Ciencia Ficción">Ciencia Ficción</option>
+					<option value="Comedia">Comedia</option>
+					<option value="Cyberpunk">Cyberpunk</option>
+					<option value="Deportes">Deportes</option>
+					<option value="Drama">Drama</option>
+					<option value="Ecchi">Ecchi</option>
+					<option value="Escolares">Escolares</option>
+					<option value="Fantasia">Fantasia</option>
+					<option value="Gore">Gore</option>
+					<option value="Harem">Harem</option>
+					<option value="Horror">Horror</option>
+					<option value="Josei">Josei</option>
+					<option value="Lucha">Lucha</option>
+					<option value="Magia">Magia</option>
+					<option value="Mecha">Mecha</option>
+					<option value="Militar">Militar</option>
+					<option value="Misterio">Misterio</option>
+					<option value="Música">Música</option>
+					<option value="Parodias">Parodias</option>
+					<option value="Psicológico">Psicológico</option>
+					<option value="Recuerdos de la vida">Recuerdos de la vida</option>
+					<option value="Seinen">Seinen</option>
+					<option value="Shojo">Shojo</option>
+					<option value="Shonen">Shonen</option>
+					<option value="Sobrenatural">Sobrenatural</option>
+					<option value="Vampiros">Vampiros</option>
+					<option value="Emision">Emision</option>
+					<option value="Latino">Latino</option>
+					<option value="Espacial">Espacial</option>
+					<option value="Histórico">Histórico</option>
+					<option value="Samurai">Samurai</option>
+					<option value="Artes Marciales">Artes Marciales</option>
+					<option value="Demonios">Demonios</option>
+					<option value="Romamce">Romamce</option>
+					<option value="Dementia">Dementia</option>
+					<option value="Policía">Policía</option>
+					<option value="Proyecto de (Sombra)">Proyecto de (Sombra)</option>
+					<option value="Castellano">Castellano</option>
+					<option value="Historia paralela">Historia paralela</option>
+					<option value="Aenime">Aenime</option>
+					<option value="Donghua">Donghua</option>
+					<option value="Blu-ray">Blu-ray</option>
+				</select>
+			</div>
+			<div class="section__selec-div">
+				<div>Año:</div>
+				<select name="Año">
+					<option value="2020">2020</option>
+					<option value="2019">2019</option>
+					<option value="2018">2018</option>
+					<option value="2017">2017</option>
+					<option value="2016">2016</option>
+					<option value="2015">2015</option>
+					<option value="2014">2014</option>
+					<option value="2013">2013</option>
+					<option value="2012">2012</option>
+					<option value="2011">2011</option>
+					<option value="2010">2010</option>
+					<option value="2009">2009</option>
+					<option value="2008">2008</option>
+					<option value="2007">2007</option>
+					<option value="2006">2006</option>
+					<option value="2005">2005</option>
+					<option value="2004">2004</option>
+					<option value="2003">2003</option>
+					<option value="2002">2002</option>
+					<option value="2001">2001</option>
+					<option value="2000">2000</option>
+					<option value="1999">1999</option>
+					<option value="1998">1998</option>
+					<option value="1997">1997</option>
+					<option value="1996">1996</option>
+					<option value="1995">1995</option>
+					<option value="1994">1994</option>
+					<option value="1993">1993</option>
+					<option value="1992">1992</option>
+					<option value="1991">1991</option>
+					<option value="1990">1990</option>
+					<option value="1989">1989</option>
+					<option value="1988">1988</option>
+					<option value="1987">1987</option>
+					<option value="1986">1986</option>
+					<option value="1985">1985</option>
+					<option value="1984">1984</option>
+					<option value="1983">1983</option>
+					<option value="1982">1982</option>
+					<option value="1981">1981</option>
+					<option value="1980">1980</option>
+					<option value="1979">1979</option>
+					<option value="1978">1978</option>
+					<option value="1977">1977</option>
+					<option value="1976">1976</option>
+					<option value="1975">1975</option>
+					<option value="1974">1974</option>
+					<option value="1973">1973</option>
+					<option value="1972">1972</option>
+					<option value="1971">1971</option>
+					<option value="1970">1970</option>
+					<option value="1969">1969</option>
+					<option value="1968">1968</option>
+					<option value="1967">1967</option>
+					<option value="1966">1966</option>
+					<option value="1965">1965</option>
+					<option value="1964">1964</option>
+					<option value="1963">1963</option>
+					<option value="1962">1962</option>
+					<option value="1961">1961</option>
+					<option value="1960">1960</option>
+					<option value="1959">1959</option>
+					<option value="1958">1958</option>
+					<option value="1957">1957</option>
+					<option value="1956">1956</option>
+					<option value="1955">1955</option>
+					<option value="1954">1954</option>
+					<option value="1953">1953</option>
+					<option value="1952">1952</option>
+				</select>
+			</div>
+			<div class="section__selec-div">
+				<div>Todo:</div>
+				<select name="Letra">
+					<option value="Todo">Todo</option>
+					<option value="#">#</option>
+					<option value="A">A</option>
+					<option value="B">B</option>
+					<option value="C">C</option>
+					<option value="D">D</option>
+					<option value="E">E</option>
+					<option value="F">F</option>
+					<option value="G">G</option>
+					<option value="H">H</option>
+					<option value="I">I</option>
+					<option value="J">J</option>
+					<option value="K">K</option>
+					<option value="L">L</option>
+					<option value="M">M</option>
+					<option value="N">N</option>
+					<option value="O">O</option>
+					<option value="P">P</option>
+					<option value="Q">Q</option>
+					<option value="R">R</option>
+					<option value="S">S</option>
+					<option value="T">T</option>
+					<option value="U">U</option>
+					<option value="V">V</option>
+					<option value="W">W</option>
+					<option value="X">X</option>
+					<option value="Y">Y</option>
+					<option value="Z">Z</option>
+				</select>
+			</div>
+		</section>		
+		<section id="videos" class="grid__videos">
+			<article>
+				<a href="../anime/k-on.html">
+					<img class="photos__grid" src="../images/animes/k-on.png" alt="K-on" title="K-on">
+					<h3 class="h3__grid">
+						K-on!
+					</h3>
+				</a>
+			</article>
+			<article>
+				<a href="../anime/K-on.html">
+					<img class="photos__grid" src="../images/animes/k-on.png" alt="K-on" title="K-on">
+					<h3 class="h3__grid">
+						K-on!
+					</h3>
+				</a>
+			</article>
+			<article>
+				<a href="../anime/K-on.html">
+					<img class="photos__grid" src="../images/animes/k-on.png" alt="K-on" title="K-on">
+					<h3 class="h3__grid">
+						K-on!
+					</h3>
+				</a>
+			</article>
+			<article>
+				<a href="../anime/K-on.html">
+					<img class="photos__grid" src="../images/animes/k-on.png" alt="K-on" title="K-on">
+					<h3 class="h3__grid">
+						K-on!
+					</h3>
+				</a>
+			</article>
+			<article>
+				<a href="../anime/K-on.html">
+					<img class="photos__grid" src="../images/animes/k-on.png" alt="K-on" title="K-on">
+					<h3 class="h3__grid">
+						K-on!
+					</h3>
+				</a>
+			</article>
+			<article>
+				<a href="../anime/K-on.html">
+					<img class="photos__grid" src="../images/animes/k-on.png" alt="K-on" title="K-on">
+					<h3 class="h3__grid">
+						K-on!
+					</h3>
+				</a>
+			</article>
+			<article>
+				<a href="../anime/K-on.html">
+					<img class="photos__grid" src="../images/animes/k-on.png" alt="K-on" title="K-on">
+					<h3 class="h3__grid">
+						K-on!
+					</h3>
+				</a>
+			</article>
+			<article>
+				<a href="../anime/K-on.html">
+					<img class="photos__grid" src="../images/animes/k-on.png" alt="K-on" title="K-on">
+					<h3 class="h3__grid">
+						K-on!
+					</h3>
+				</a>
+			</article>
+			<article>
+				<a href="../anime/K-on.html">
+					<img class="photos__grid" src="../images/animes/k-on.png" alt="K-on" title="K-on">
+					<h3 class="h3__grid">
+						K-on!
+					</h3>
+				</a>
+			</article>
+			<article>
+				<a href="../anime/K-on.html">
+					<img class="photos__grid" src="../images/animes/k-on.png" alt="K-on" title="K-on">
+					<h3 class="h3__grid">
+						K-on!
+					</h3>
+				</a>
+			</article>
+			<article>
+				<a href="../anime/K-on.html">
+					<img class="photos__grid" src="../images/animes/k-on.png" alt="K-on" title="K-on">
+					<h3 class="h3__grid">
+						K-on!
+					</h3>
+				</a>
+			</article>
+			<article>
+				<a href="../anime/K-on.html">
+					<img class="photos__grid" src="../images/animes/k-on.png" alt="K-on" title="K-on">
+					<h3 class="h3__grid">
+						K-on!
+					</h3>
+				</a>
+			</article>
+		</section>
+		<footer class="footer">
+			<p>
+				MonitosChinos © 2020 Todos los derechos reservados.<br>
+				Ningun video se encuentra alojado en nuestros servidores.<br>
+				No somos fansub, todos los vídeos enlazados son tomados de internet, de sitios webs gratuitos.
+			</p>
+			<p>
+				<a href="">Contactanos</a>
+			</p>
+		</footer>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
